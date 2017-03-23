@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Front End Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+  </head>
+  <body>
+	<div class="container" ng-app="app">
+		<div class="row">
+			<main ng-controller="NavController as NavCtrl">
+				<div class="content col-md-12">
+					<header>
+						<h1>
+							<span class="glyphicon glyphicon-cog"></span>Global Settings
+						</h1>
+					</header>
+					<nav>
+						<ul id="nav">
+							<li class="active-tab">
+								<span class="glyphicon glyphicon-globe"></span><a href="" id="siteInfoTab" ng-click="NavCtrl.ActiveTab($event)">Site Info</a>
+							</li>
+							<li>
+								<span class="glyphicon glyphicon-earphone"></span><a href="" id="businessContactTab" ng-click="NavCtrl.ActiveTab($event)">Business Contacts</a>
+							</li>
+							<li>
+								<span class="glyphicon glyphicon-dashboard"></span><a href="" id="dashboardTab" ng-click="NavCtrl.ActiveTab($event)">Dashboard Info</a>
+							</li>
+						</ul>
+					</nav>
+					<article>
+						<form>
+							<section id="siteInfo" class="">
+								<h5>General Information</h5>
+								<div class="content content-box">
+									<div class="container-box">
+										<label for="companyName">Company name</label><br />
+										<input type="text" name="companyName" id="companyName" placeholder="Company Name"/>
+										<label for="siteTitle">Site Title</label><br />
+										<input type="text" name="siteTitle" id="siteTitle" placeholder="Site Title"/>
+										<label for="tagLine">Tagline</label><br />
+										<input type="text" name="tagLine" id="tagLine" placeholder="Tagline"/>
+									</div>
+								</div>
+								<h5>Social Media Accounts</h5>
+								<div class="content content-box">
+									<div class="">
+										<div class="col-md-6">
+											<div class="header-box">
+												Full Color Icons
+												<div id="btn-toggle-container">
+													<div class="btn-group btn-toggle"> 
+														<button class="btn btn-xs btn-default" ng-click="NavCtrl.toggleButton($event)">ON</button>
+														<button class="btn btn-xs btn-primary active" ng-click="NavCtrl.toggleButton($event)">OFF</button>
+													</div>
+												</div>
+											</div>
+											<ul>
+												<li ng-repeat="icon in NavCtrl.contentData.socialMedia.icon"><span class="fa {{icon.class}}"></span>{{icon.name}}</li>
+											</ul>
+										</div>						
+										<div class="col-md-6 removePadding">
+											<div class="header-box">Social Module Title 
+												<div id="find-container">
+													<input name="findUs" id="findUs" type="text" placeholder="Find Us" />
+													<button name="findUsBtn" id="findUsBtn" class="glyphicon glyphicon-eye-close" /></button>
+												</div>
+											</div>
+											<ul class="socialBox"  ng-repeat="label in NavCtrl.contentData.socialMedia.label">
+												<li>{{label.name}}</li>
+												<li><input name="{{label.ID}}" id="{{label.ID}}" type="text" placeholder="Screenname" /></li>
+											</ul>
+											<ul class="socialBox">
+												<li><input name="tumblrScreenname" id="tumblrScreenname" type="text" placeholder="Screenname" /></li>
+												<li>.tumblr.com/</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<br clear="both"/>
+								<div id="buttonContainer">
+									<button id="cancelBtn" ng-click="NavCtrl.cancelBtn()">Cancel</button>
+									<button id="saveBtn" ng-click="NavCtrl.saveBtn()">Save</button>
+								</div>
+							</section>
+							<section id="businessContact" class="hidden">Business Contacts</section>
+							<section id="calendar" class="hidden">Calendar</section>
+							<section id="dashboard" class="hidden">Dashboard Info</section>
+						</form>
+					</article>
+				</div>
+			</main>
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+	<script src="js/nav.controller.js"></script>
+  </body>
+</html>

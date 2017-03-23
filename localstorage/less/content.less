@@ -1,0 +1,165 @@
+@import "base";
+
+main {
+	header h1 {
+		@media only screen and (max-width: 768px) {
+			padding: 16px;
+		}
+	}
+	article {
+		@media only screen and (max-width: 768px) {
+			padding: 30px;
+		}
+		section {
+			&.activeSection{
+				-webkit-transition: opacity 100s; /* For Safari 3.1 to 6.0 */
+				transition: opacity 100s;
+				opacity: 1;
+			}
+
+			.content-box {
+				background-color: @content-box-color;
+				border: 1px solid @border-color;
+				padding: 20px;
+				float: left;
+				width: 100%;
+				background-color: @content-box-color;
+				ul {
+					padding: 0;
+					li {
+						list-style-type: none;
+						font: bold 18px arial, helvatica, sans-serif;
+						padding: 15px 15px 15px 0;
+						span {
+							&.fa {
+								margin-right: 10px;
+							}
+						}
+					}
+					&.socialBox {
+						width: 100%;
+						border: 1px solid @border-color;
+						background-color: white;
+						color: @grey-color;
+						float: left;
+						margin: 9px 0;
+						&:last-child {
+							background-color: @content-box-color;
+							li {
+								&:first-child {
+									padding: 0;
+									input[type=text] {
+										border:0;
+										border-right: 1px solid @border-color;
+									}
+								}
+								&:last-child {
+									padding: 6px;
+									background-color: @content-box-color;
+								}
+							}
+						}
+						li {
+							padding: 0;
+							float: left;
+							font-size: 16px;
+							width: auto;
+							&:first-child {
+								padding: 6px;
+								font-weight: normal;
+								background-color: @content-box-color;
+								@media only screen and (max-width: 768px) {
+									width: 100%;
+								}
+							}
+							&:last-child {
+								background-color: white;
+							}
+						}
+						input[type=text] {
+							margin: 0;
+							border: 0;
+							border-left: 1px solid @border-color;
+							border-right: 0;
+							padding: 6px;
+							font-weight: normal;
+							&.socialField {
+								
+							}
+						}
+					}
+				}
+			}
+			h5 {
+				font-weight: bold;
+				display: inline-block;
+				margin-top: 20px;
+				float: left;
+			}
+			input[type="text"]{
+				width: 100%;
+				padding: 5px;
+				margin-bottom: 20px;
+			}
+			label {
+				&.labelBox {
+					width: auto;
+					border: 1px solid @border-color;
+					max-width: inherit;
+					padding: 6px;
+				}
+			}
+			.header-box {
+				background-color: #EDEEF0;
+				padding: 10px;
+				position: relative;
+			}
+			.removePadding {
+				padding: 0;
+			}
+			#find-container {
+				float: right;
+				position: absolute;float: right;
+				position: absolute;
+				right: 10px;
+				top: 8px;
+				#findUs {
+					margin: 0;
+					margin: 0;
+					padding: 1px;
+					width: 85%;
+					position: relative;
+					left: 8px;
+					border: 1px solid @border-color;
+				}
+				#findUsBtn {
+					float: right;
+					padding: 4px;
+					margin: 0;
+					border: 1px solid @border-color;
+					position: relative;
+					top: 0;
+				}
+			}
+			#btn-toggle-container {
+				float: right;
+			}
+			#buttonContainer {
+				float: right;
+				margin-top: 10px;
+				button {
+					padding: 7px;
+					margin: 2px;
+					&#saveBtn {
+						background-color: @usedColor;
+						border: 1px solid @usedColor;
+						color: #fff;
+					}
+					&#cancelBtn {
+						border: 1px solid @border-color;
+					}
+				}
+			}
+		}
+	}
+}

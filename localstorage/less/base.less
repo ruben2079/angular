@@ -1,0 +1,36 @@
+@blue-color: #2DD2D6;
+@border-color: #ccc;
+@grey-color: #ccc;
+@content-box-color: #FAFAFA;
+@usedColor: #14A7AB;
+
+body {
+	background-color: #6F7880;
+}
+.container {
+    background-color: #fff;
+    padding: 30px 106px;
+    margin: 30px auto;
+	@media only screen and (max-width: 768px) {
+		/* For mobile phones: */
+			padding: 0;
+	}
+}
+.glyphicon.glyphicon-cog {
+	top: 1px;
+	margin-right: 5px;
+}
+
+.btn-primary {
+	&.active{
+		background-color: @usedColor;
+		border-color: @usedColor;
+	}
+	&:active {
+		background-color: @usedColor;
+		border-color: @usedColor;
+	}
+}
+.coloredIcon {
+	color: #14A7AB;
+}

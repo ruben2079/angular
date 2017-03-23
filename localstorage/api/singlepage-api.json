@@ -1,0 +1,101 @@
+angular.callbacks._0(
+{
+	"socialMedia": {
+		"label": [
+			{
+				"ID": "facebookScreenname",
+				"name": "facebook.com/"
+			},
+			{
+				"ID": "twitterScreenname",
+				"name": "twitter.com/"
+			},
+			{
+				"ID": "linkedinScreenname",
+				"name": "linkedin.com/in/"
+			},
+			{
+				"ID": "linkedinCoScreenname",
+				"name": "linkedin.com/company/"
+			},
+			{
+				"ID": "plusGoogleScreenname",
+				"name": "plus.google.com/"
+			},
+			{
+				"ID": "youtubeScreenname",
+				"name": "youtube.com/"
+			},
+			{
+				"ID": "flickrScreenname",
+				"name": "flickr.com/"
+			},
+			{
+				"ID": "vimeoScreenname",
+				"name": "vimeo.com/"
+			},
+			{
+				"ID": "pinterestScreenname",
+				"name": "pinterest.com/"
+			},
+			{
+				"ID": "instagramScreenname",
+				"name": "followgram.com/"
+			},
+			{
+				"ID": "foursquareScreenname",
+				"name": "foursquare.com/"
+			}
+		],
+		"icon": [
+			{
+				"class": "fa-facebook-square",
+				"name": "Facebook"
+			},
+			{
+				"class": "fa-twitter-square",
+				"name": "Twitter"
+			},
+			{
+				"class": "fa-linkedin-square",
+				"name": "LinkedIn"
+			},
+			{
+				"class": "fa-linkedin-square",
+				"name": "LinkedIn Company"
+			},
+			{
+				"class": "fa-google-plus-square",
+				"name": "Google Plus"
+			},
+			{
+				"class": "fa-youtube-square",
+				"name": "YouTube"
+			},
+			{
+				"class": "fa-flickr",
+				"name": "Flickr"
+			},
+			{
+				"class": "fa-vimeo-square",
+				"name": "Vimeo"
+			},
+			{
+				"class": "fa-pinterest-square",
+				"name": "Pinterest"
+			},
+			{
+				"class": "fa-instagram",
+				"name": "Instagram"
+			},
+			{
+				"class": "fa-foursquare",
+				"name": "Foursquare"
+			},
+			{
+				"class": "fa-tumblr-square",
+				"name": "Tumblr"
+			}
+		]
+	}
+})
