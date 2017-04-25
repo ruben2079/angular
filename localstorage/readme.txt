@@ -9,3 +9,5 @@ Implementations:
 	- Cancel / Save buttons
 	- Local Storage
 	- implementation of fake API (JSON format) to display data in the UI
+
+	URL: http://www.ruben-guzman.com/angular/
