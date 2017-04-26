@@ -1,4 +1,8 @@
+#Angular | LocalStorage
+
 Implementations:
+
+>>>>>>> development
 	- HTML5
 	- CSS / LESS
 	- AngularJS / vanilla javascript
@@ -11,4 +15,3 @@ Implementations:
 	- implementation of fake API (JSON format) to display data in the UI
 
 	URL: http://www.ruben-guzman.com/angular/
-  
