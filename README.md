@@ -1,4 +1,7 @@
+#Angular | LocalStorage
+
 Implementations:
+
 	- HTML5
 	- CSS / LESS
 	- AngularJS / vanilla javascript
